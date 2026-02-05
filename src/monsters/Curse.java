@@ -6,4 +6,9 @@ public class Curse extends Monsters{
         super(name, hands);
 
     }
+
+    @Override
+    public void SpecialPowers() {
+        System.out.println("Domain expansion");
+    }
 }

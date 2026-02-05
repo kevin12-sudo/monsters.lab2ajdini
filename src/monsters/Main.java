@@ -8,6 +8,8 @@ public class Main {
 
         System.out.println("Monster 1 hands: " + m1.getHands());
         System.out.println("Monster 2 hands: " + m2.getHands());
+        m1.SpecialPowers();
+        m2.SpecialPowers();
 
     }
 }

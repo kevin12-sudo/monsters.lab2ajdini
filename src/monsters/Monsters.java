@@ -31,4 +31,7 @@ public abstract class Monsters {
     private Hands hands;
 
 
+    public abstract void SpecialPowers();
+
+
 }
