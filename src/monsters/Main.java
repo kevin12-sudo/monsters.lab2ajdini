@@ -3,11 +3,11 @@ package monsters;
 public class Main {
 
     public static void main(String[] args){
-        Monsters m1 = new Grass("Chikorita");
-        Monsters m2 = new Curse("Sukuna");
+        Monsters m1 = new Titan("Eren", Hands.TWO);
+        Monsters m2 = new Curse("Sukuna", Hands.FOUR);
 
-        System.out.println("Monster 1 name: " + m1.getName());
-        System.out.println("Monster 1 name: " + m2.getName());
+        System.out.println("Monster 1 hands: " + m1.getHands());
+        System.out.println("Monster 2 hands: " + m2.getHands());
 
     }
 }
