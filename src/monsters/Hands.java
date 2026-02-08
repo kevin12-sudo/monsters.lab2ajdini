@@ -1,5 +1,5 @@
 package monsters;
 
 public enum Hands {
-    TWO, FOUR,SIX,CLAWS
+    TWO, FOUR,CLAWS,PAWS,
 }

@@ -1,9 +1,9 @@
 package monsters;
 
-public class Titan extends Monsters {
+public final class Titan extends Monsters {
 
-    public Titan(String name, Hands hands) {
-        super(name, hands);
+    public Titan(String name, Hands hands, String teeth, String horns, String eyes, String skin) {
+        super(name, hands, teeth, horns, eyes, skin);
     }
 
     @Override

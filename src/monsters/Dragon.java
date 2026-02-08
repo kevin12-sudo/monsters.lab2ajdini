@@ -1,13 +1,13 @@
 package monsters;
 
-public class Dragon extends Monsters {
+public final class Dragon extends Monsters {
 
-    public Dragon(String name, Hands hands) {
-        super(name, hands); // Assign Dragon's specific power
+    public Dragon(String name, Hands hands, String teeth, String horns, String eyes, String skin) {
+        super(name, hands, teeth, horns, eyes, skin);
     }
 
     @Override
     public void Attack() {
-        System.out.println("The dragons attack and special power is: " + getSpecialPowers());
+        System.out.println("The dragon's attack and special power is: " + getSpecialPowers());
     }
 }
