@@ -3,12 +3,14 @@ package monsters;
 public abstract class Monsters {
     private String name;
     private Hands hands;
-    private SpecialPowers specialPowers; // Changed to enum type
+    private SpecialPowers specialPowers;
+    // Changed to enum type
 
-    public Monsters(String name, Hands hands, SpecialPowers specialPowers) {
+    public Monsters(String name, Hands hands) {
         this.name = name;
         this.hands = hands;
-        this.specialPowers = specialPowers;
+
+
     }
 
     public String getName() {

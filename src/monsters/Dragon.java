@@ -3,7 +3,7 @@ package monsters;
 public class Dragon extends Monsters {
 
     public Dragon(String name, Hands hands) {
-        super(name, hands, SpecialPowers.FIRE_BREATH); // Assign Dragon's specific power
+        super(name, hands); // Assign Dragon's specific power
     }
 
     @Override

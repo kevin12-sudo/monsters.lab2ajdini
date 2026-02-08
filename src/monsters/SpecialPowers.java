@@ -1,5 +1,5 @@
 package monsters;
 
 public enum SpecialPowers {
-    LAZER_EYES, FIRE_BREATH, BITE, SUPERHUMAN_CRUSH, SOUL_HAUNT
+    POISON_BREATH, FIRE_BREATH, BITE, HOT_STEAM_SKIN, SOUL_HAUNT
 }

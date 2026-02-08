@@ -2,7 +2,7 @@ package monsters;
 
 public class Yokai extends Monsters {
     public Yokai(String name, Hands hands) {
-        super(name, hands, SpecialPowers.SOUL_HAUNT); // Yokai's power
+        super(name, hands); // Yokai's power
     }
 
     @Override
