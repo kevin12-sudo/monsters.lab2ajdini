@@ -1,13 +1,14 @@
 package monsters;
 
 public abstract class Monsters {
+    private String name;
+    private Hands hands;
+    private SpecialPowers specialPowers; // Changed to enum type
 
-    public Monsters(String name, Hands hands) {
+    public Monsters(String name, Hands hands, SpecialPowers specialPowers) {
         this.name = name;
         this.hands = hands;
-    }
-
-    private void hands() {
+        this.specialPowers = specialPowers;
     }
 
     public String getName() {
@@ -18,20 +19,21 @@ public abstract class Monsters {
         this.name = name;
     }
 
-    private String name;
-
     public Hands getHands() {
         return hands;
     }
 
-    public void setHands(Hands powers) {
-        this.hands = powers;
+    public void setHands(Hands hands) {
+        this.hands = hands;
     }
 
-    private Hands hands;
+    public SpecialPowers getSpecialPowers() {
+        return specialPowers;
+    }
 
+    public void setSpecialPowers(SpecialPowers specialPowers) {
+        this.specialPowers = specialPowers;
+    }
 
-    public abstract void SpecialPowers();
-
-
+    public abstract void Attack();
 }

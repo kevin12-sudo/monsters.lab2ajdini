@@ -3,12 +3,12 @@ package monsters;
 public class Titan extends Monsters {
 
     public Titan(String name, Hands hands) {
-        super(name, hands);
+        super(name, hands,SpecialPowers.SUPERHUMAN_CRUSH);
     }
 
     @Override
-    public void SpecialPowers() {
-        System.out.println("Bite");
+    public void Attack() {
+        System.out.println("The titans attack and special power is: " +getSpecialPowers());
 
     }
 }
