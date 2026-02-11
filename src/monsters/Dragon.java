@@ -10,10 +10,24 @@
 package monsters;
 /** dragon monster type*/
 public final class Dragon extends Monsters {
-    /** constructor */
-    public Dragon(String name, Hands hands, String teeth, String horns, String eyes, String skin) {
-        super(name, hands, teeth, horns, eyes, skin);
+    public String getWing_type() {
+        return wing_type;
     }
+
+    public void setWing_type(String wing_type) {
+        this.wing_type = wing_type;
+    }
+
+    private String wing_type;
+    /** constructor */
+    public Dragon(String name, Hands hands, String teeth, String horns, String eyes, String skin,String wing_type) {
+        super(name, hands, teeth, horns, eyes, skin);
+        this.wing_type = wing_type;
+    }
+
+
+
+
     /** uses the special powers to attack for this specific monster*/
     @Override
     public void Attack() {

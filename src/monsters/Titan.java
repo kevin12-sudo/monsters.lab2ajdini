@@ -10,9 +10,19 @@
 package monsters;
 /** titan monster class, direct reference to attack on titan monsters*/
 public final class Titan extends Monsters {
+    public String getBlood_type() {
+        return blood_type;
+    }
+
+    public void setBlood_type(String blood_type) {
+        this.blood_type = blood_type;
+    }
+
+    private String blood_type;
     /** constructors */
-    public Titan(String name, Hands hands, String teeth, String horns, String eyes, String skin) {
+    public Titan(String name, Hands hands, String teeth, String horns, String eyes, String skin, String blood_type) {
         super(name, hands, teeth, horns, eyes, skin);
+        this.blood_type = blood_type;
     }
     /** attack behavior for titans using special powers*/
     @Override

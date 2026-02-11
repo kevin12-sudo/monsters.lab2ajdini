@@ -16,11 +16,11 @@ public class Main {
     /** creates 5 different monsters all unique and children of the abstract monster class */
     /** sets their special powers and prints out their detail and powers */
     public static void main(String[] args){
-        Monsters colossal_titan = new Titan("Armin", Hands.TWO,"Rock teeth","none","brown","Dark red muscles");
-        Monsters dragon1 = new Dragon("Kalamet", Hands.CLAWS,"Metal teeth","Metal horns","Brown eyes","Red scales");
-        Monsters yokai1 = new Yokai("Ao Oni",Hands.FOUR,"Sharp teeth","Bone-like","Dark red eyes","Purple flesh");
-        Monsters dragon2 = new Dragon("Sinh",Hands.PAWS,"Jagged teeth","Flesh like","Blue eyes","Green scales");
-        Monsters armor_titan = new Titan("Reiner",Hands.TWO,"Rock teeth","none","Yellow eyes","Yellow metal");
+        Monsters colossal_titan = new Titan("Armin", Hands.TWO,"Rock teeth","none","brown","Dark red muscles","AB positive");
+        Monsters dragon1 = new Dragon("Kalamet", Hands.CLAWS,"Metal teeth","Metal horns","Brown eyes","Red scales","Fire wings");
+        Monsters yokai1 = new Yokai("Ao Oni",Hands.FOUR,"Sharp teeth","Bone-like","Dark red eyes","Purple flesh","Soul of Greed");
+        Monsters dragon2 = new Dragon("Sinh",Hands.PAWS,"Jagged teeth","Flesh like","Blue eyes","Green scales","poison mist wings");
+        Monsters armor_titan = new Titan("Reiner",Hands.TWO,"Rock teeth","none","Yellow eyes","Yellow metal","O negative");
 
         /** sets monsters special powers and attacks as stated in directions*/
         colossal_titan.setSpecialPowers(SpecialPowers.HOT_STEAM_SKIN);
@@ -31,12 +31,13 @@ public class Main {
 
         /** all monster details this one specifically for monster 1*/
         System.out.println("Monster 1 details:");
-        System.out.println("name " + colossal_titan.getName());
+        System.out.println("name: " + colossal_titan.getName());
         System.out.println("hands: " + colossal_titan.getHands());
         System.out.println("teeth: " +colossal_titan.getTeeth());
         System.out.println("horns: " + colossal_titan.getHorns());
         System.out.println("eyes: " + colossal_titan.getEyes());
         System.out.println("skin: " + colossal_titan.getSkin());
+        System.out.println("Blood type: " + ((Titan)colossal_titan).getBlood_type());
         colossal_titan.Attack();
         /** monster 2*/
         System.out.println("Monster 2 details:");
@@ -46,6 +47,7 @@ public class Main {
         System.out.println("horns: " + dragon1.getHorns());
         System.out.println("eyes: " + dragon1.getEyes());
         System.out.println("skin: " + dragon1.getSkin());
+        System.out.println("Wing type: " + ((Dragon)dragon1).getWing_type());
         dragon1.Attack();
         /** monster 3*/
         System.out.println("Monster 3 details:");
@@ -55,6 +57,7 @@ public class Main {
         System.out.println("horns: " + yokai1.getHorns());
         System.out.println("eyes: " + yokai1.getEyes());
         System.out.println("skin: " + yokai1.getSkin());
+        System.out.println("Soul type: " + ((Yokai)yokai1).getSoul_type());
         yokai1.Attack();
         /** monster 4*/
         System.out.println("Monster 4 details:");
@@ -64,6 +67,7 @@ public class Main {
         System.out.println("horns: " + dragon2.getHorns());
         System.out.println("eyes: " + dragon2.getEyes());
         System.out.println("skin: " + dragon2.getSkin());
+        System.out.println("Wing type: " + ((Dragon)dragon2).getWing_type());
         dragon2.Attack();
         /** monster 5 */
         System.out.println("Monster 5 details:");
@@ -73,6 +77,7 @@ public class Main {
         System.out.println("horns: " + armor_titan.getHorns());
         System.out.println("eyes: " + armor_titan.getEyes());
         System.out.println("skin: " + armor_titan.getSkin());
+        System.out.println("Blood type: " + ((Titan)armor_titan).getBlood_type());
         armor_titan.Attack();
         /** names all the monsters and displays their special powers/attacks as stated in directions*/
         System.out.println("All monsters special powers:");
